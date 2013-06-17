@@ -1,1 +1,176 @@
-/* CSS declarations go here */
+
+body {
+  padding-bottom: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  margin-top: 50px;
+  font-weight: 300;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  line-height: 1;
+}
+
+a {
+  color: rgb(147, 154, 206);
+}
+
+a:hover {
+  color: rgb(107, 121, 214);
+  text-decoration: none;
+}
+
+#header {
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+#menu {
+  margin-top: 20px;
+  margin-right: 40px;
+  display: inline-block;
+  float: right;
+  list-style: none;
+}
+
+.firstli {
+  float: left;
+  margin-left: 20px;
+}
+#menu a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+#logo {
+  height: 80px;
+  margin-top: 10px;
+}
+
+.icon-dl {
+  width: 55px;
+  height: 55px;
+}
+
+#start {
+  background-color: #444;
+  color: white;
+  padding: 10px;
+}
+
+#start h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#start h5 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+#start small {
+  font-size: 11px;
+}
+
+#start input[type="text"], input[type="password"] {
+  background-color: #ccc;
+  width: 185px;
+}
+
+#start label {
+  font-size: 13px;
+  color: #aaa;
+}
+
+#start a {
+  color: #aaa;
+  text-decoration: underline;
+}
+
+#start a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+#start input[type="submit"] {
+  width: 200px;
+}
+
+#events h4 {
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+#events p {
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 15px;
+}
+
+#sep {
+  margin: 80px 0 80px 0;
+  border: solid #dddddd;
+  border-width: 1px 0 0;
+}
+
+#featurette hr {
+  margin: 80px;
+  border: solid #dddddd;
+  border-width: 1px 0 0;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette {
+  padding-top: 0px; /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+  margin-top: 0px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  line-height: 1;
+  letter-spacing: -1px;
+  margin: 0 0 10px 0;
+}
+
+.featurette-text {
+  font-size: 18px;
+}
+
+#features h4 {
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+
+.footer {
+  text-align: center;
+}
