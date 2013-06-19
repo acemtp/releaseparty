@@ -159,3 +159,10 @@ a:hover {
 .footer {
   text-align: center;
 }
+
+#faq h4, #schedule h4 {
+  font-size: 20px;
+  margin-top: 40px;
+  font-weight: 300;
+}
+
