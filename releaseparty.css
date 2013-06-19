@@ -10,17 +10,9 @@ body {
   font-weight: 300;
 }
 
-h2 {
-  margin-top: 50px;
+.title {
+  margin-bottom: 50px;
   font-weight: 300;
-}
-
-h3 {
-  font-weight: 400;
-  font-size: 20px;
-  margin-bottom: 0;
-  margin-top: 20px;
-  line-height: 1;
 }
 
 a {
@@ -30,6 +22,27 @@ a {
 a:hover {
   color: rgb(107, 121, 214);
   text-decoration: none;
+}
+
+#logo {
+	font-size: 50px;
+	font-weight: 600;
+	letter-spacing: -7px;
+  line-height: 1;
+}
+
+#logo a {
+  color: rgb(56, 64, 122);
+}
+
+#logo a:hover {
+  color: rgb(107, 121, 214);
+  text-decoration: none;
+}
+
+
+#tagline {
+	font-size: 15px;
 }
 
 #header {
@@ -54,78 +67,47 @@ a:hover {
   text-decoration: none;
 }
 
-#logo {
-  height: 80px;
-  margin-top: 10px;
+#intro {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
-.icon-dl {
-  width: 55px;
-  height: 55px;
+#megaline {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: center;
 }
 
-#start {
-  background-color: #444;
-  color: white;
-  padding: 10px;
+#smallline {
+  font-weight: 400;
+  text-align: center;
 }
 
-#start h4 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 0;
-}
-
-#start h5 {
-  font-size: 20px;
-  font-weight: 300;
-  margin-top: 20px;
-}
-
-#start small {
-  font-size: 11px;
-}
-
-#start input[type="text"], input[type="password"] {
-  background-color: #ccc;
-  width: 185px;
-}
-
-#start label {
-  font-size: 13px;
-  color: #aaa;
-}
-
-#start a {
-  color: #aaa;
-  text-decoration: underline;
-}
-
-#start a:hover {
-  color: #fff;
-  text-decoration: underline;
-}
-
-#start input[type="submit"] {
-  width: 200px;
-}
-
-#events h4 {
-  margin-top: 30px;
-  font-size: 25px;
-  font-weight: 100;
-}
-
-#events p {
-  font-size: 15px;
-  font-weight: 100;
-  line-height: 15px;
-}
-
-#sep {
-  margin: 80px 0 80px 0;
+.sep {
+  margin: 80px 0 60px 0;
   border: solid #dddddd;
   border-width: 1px 0 0;
+}
+
+.team {
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.team img {
+  height: 100px;
+  margin-right: 10px;
+}
+
+.team-name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.team-desc {
+  font-size: 13px;
+  font-weight: 400;
 }
 
 #featurette hr {
@@ -170,6 +152,9 @@ a:hover {
   font-weight: 100;
 }
 
+.error {
+  color: #b94a48;
+}
 
 .footer {
   text-align: center;

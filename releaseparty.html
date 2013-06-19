@@ -1,7 +1,8 @@
 <head>
 
-  <meta charset="utf-8">
   <title>Release Party</title>
+
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="Release Party">
@@ -9,9 +10,8 @@
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome-ie7.min.css" rel="stylesheet">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
 
-  <!-- Fav and touch assets -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
@@ -25,102 +25,169 @@
   <meta property="og:type" content="website"/>
   <meta property="og:description" content="Release Party"/>
 
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
   <div class="container">
     <div id="header" class="row">
-      <div class="span3">
-        <a href="#"><img id="logo" src="http://placehold.it/350x150"/></a>
+      <div class="span4">
+        <span id="logo"><a href="#">Release Party</a></span><br/><span id="tagline">from scratch to live in 40 hours</span>
       </div>
-      <div class="span9">
+      <div class="span8">
         <ul id="menu">
           <li class="firstli"><a href="#">Home</a></li>
-          <li class="firstli"><a href="#">Schedule</a></li>
-          <li class="firstli"><a href="#">Sponsors</a></li>
-          <li class="firstli"><a href="#">About</a></li>
-          <li class="firstli"><a href="#">Team</a></li>
-          <li class="firstli"><a href="#">Rules</a></li>
-          <li class="firstli"><a href="#">Blog</a></li>
+          <li class="firstli"><a href="#features">About</a></li>
+          <li class="firstli"><a href="#schedule">Schedule</a></li>
+          <li class="firstli"><a href="#team">Team</a></li>
         </ul>
       </div>
     </div>
 
+    <div id="intro" class="row">
+      <div class="span7">
+        <p id="megaline">No pitch. No judges. No bullshit.<br/><b>Just create, release & have fun!</b></p>
+        <p id="smallline">Held in <b>Paris</b>/France in <b>November 2013</b>.</p>
+      </div>
+      <div class="span5">
+        {{> subscribe}}
+      </div>
+    </div>
+
     <div id="features" class="row">
-      <div class="span12">
-        <h4>No judges</h4>
+      <div class="span4">
+        <h4>Not a pitch-athon</h4>
         <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
-        <h4>Collaboration over competition</h4>
+        <h4>By DOers for DOers</h4>
         <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
 
         <h4>Release</h4>
         <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
+      <div class="span4">
+        <h4>Collaboration & creativity</h4>
+        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
-        <h4>DOers</h4>
+        <h4>Web, Mobile, Game, Hardware</h4>
+        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+        <h4>Last minute theme</h4>
+        <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+      </div>
+      <div class="span4">
+        <h4>Fast compo</h4>
+        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+        <h4>General Info</h4>
+        <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+        <h4>Achievements & Badges</h4>
         <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
       </div>
     </div>
 
-    <hr id="sep" />
+    <hr class="sep" />
 
-
-    <div id="features" class="row">
+    <div id="schedule" class="row">
       <div class="span12">
-
+        <h2 class="title">Schedule</h2>
         <div class="row">
-          <div class="span6">
-            <h4>Achievements & Badges</h4>
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-            <h4>Achievements & Badges</h4>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-            <h4>Achievements & Badges</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-
-            <h4>Achievements & Badges</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <div class="span3">
+            <h4>Friday</h4>
+            <ul>
+              <li>5PM: start</li>
+              <li>6PM: start</li>
+              <li>7PM: start</li>
+            </ul>
           </div>
-
-          <div class="span6">
-            <h4>Achievements & Badges</h4>
-            <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-            <h4>Achievements & Badges</h4>
-            <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-            <h4>Achievements & Badges</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-
-            <h4>and more...</h4>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <div class="span3">
+            <h4>Saturday</h4>
+            <ul>
+              <li>5PM: start</li>
+              <li>6PM: start</li>
+              <li>7PM: start</li>
+            </ul>
+          </div>
+          <div class="span3">
+            <h4>Sunday</h4>
+            <ul>
+              <li>5PM: start</li>
+              <li>6PM: start</li>
+              <li>7PM: start</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <hr id="sep" />
+    <hr class="sep" />
 
-    <div class="row">
+    <div id="team" class="row">
       <div class="span12">
-        <!-- News -->
-        <h2>Latest News</h2>
-        <h3><a href="">No Competition</a></h3>
-        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum....</p>
-        <h3><a href="">No judges... Really...</a></h3>
-        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum....</p>
-        <h3><a href="#">Where is...</a></h3>
-        <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum....</p>
-        <h3><a href="#">More news...</a></h3>
-
+        <h2 class="title">Team</h2>
+        <div class="row">
+          <div class="span4 team">
+            <img src="http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/3/000/124/09d/0e7efcc.jpg" class="img-circle pull-left" alt="">
+            <p class="team-name">Vianney 'acemtp' Lecroart</p>
+            <p class="team-desc">dok.io tech founder - Organized AngelHackParis - Demoscene coder - Organized coding party</p>
+          </div>
+          <div class="span4 team">
+            <img src="https://si0.twimg.com/profile_images/1643919704/saint-carlito__1_.jpg" class="img-circle pull-left" alt="">
+            <p class="team-name">Carlos 'Made' Pardo</p>
+            <p class="team-desc">Artist - Café Salé cofounder - Demoscene well known graphist</p>
+          </div>
+          <div class="span4 team">
+            <img src="http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/2/000/03f/296/2277b96.jpg" class="img-circle pull-left" alt="">
+            <p class="team-name">Nicolas Hognon</p>
+            <p class="team-desc">C++ Dev - ePawn lead software engineer - Demoscene fan</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span4 team">
+            <img src="http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/1/000/03c/26f/2cf3065.jpg" class="img-circle pull-left" alt="">
+            <p class="team-name">Florian 'madflo' Le Goff</p>
+            <p class="team-desc">Takeoff Conference organizer - MailJet Evangelist - 9h37 tech cofounder - Organized Prologin</p>
+          </div>
+          <div class="span4 team">
+            <img src="http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/6/000/26d/3ab/3d52b58.jpg" class="img-circle pull-left" alt="">
+            <p class="team-name">Alban 'Skeet' Lecocq</p>
+            <p class="team-desc">10+ years video game coder - Demoscene coder</p>
+          </div>
+          <div class="span4 team">
+            <img src="http://m.c.lnkd.licdn.com/mpr/mpr/shrink_200_200/p/3/000/1be/30d/03e82c6.jpg" class="img-circle pull-left" alt="">
+            <p class="team-name">Benjamin-Samuel Ewenczyk</p>
+            <p class="team-desc">Product manager evangelist - Lean startup machine mentor - digiBiDi tech founder</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span4 team">
+            <img src="https://si0.twimg.com/profile_images/433785489/img_8287_square2.jpg" class="img-circle pull-left" alt="">
+            <p class="team-name">Marc 'Case' Planard</p>
+            <p class="team-desc">9 years video game coder - Global Game Jam fan</p>
+          </div>
+          <div class="span4 team">
+            <img src="http://static9.viadeo-static.com/servlet/photo?memberId=0021huiuyk0utxf5&height=185&width=140&ts=1248729762000" class="img-circle pull-left" alt="">
+            <p class="team-name">François Lecroart</p>
+            <p class="team-desc">9 years web coder - JS fan</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <hr/>
-
-    <div class="footer">
-      <small>&copy; Release Party 2013 | <a href="mailto:acemtp@gmail.com">acemtp@gmail.com</a></small>
     </div>
 
   </div> <!-- /container -->
 </body>
+
+
+
+<template name="subscribe">
+  {{#if subscribed}}
+    <p>We are happy to know you are interested by this project. We'll contact you as soon as we have more information!</p>
+  {{else}}
+    <p>Subscribe to be informed when tickets are available:</p>
+    <input id="email" type="email" size="90" placeholder="email..." /><br/>
+    {{#if error}}<p class="error">{{error}}</p>{{/if}}
+    <input id="btn" class="btn" type="button" value="Subscribe" />
+  {{/if}}
+</template>
