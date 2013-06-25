@@ -29,10 +29,12 @@ a:hover {
 }
 
 #logo {
+  white-space:nowrap;
 	font-size: 50px;
 	font-weight: 600;
 	letter-spacing: -7px;
   line-height: 1;
+  margin-bottom: 0;
 }
 
 #logo a {
@@ -47,11 +49,12 @@ a:hover {
 
 #tagline {
 	font-size: 15px;
+  position: relative;
+  top: -9px;
 }
 
 #header {
-  height: 90px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 #menu {
@@ -72,25 +75,33 @@ a:hover {
 }
 
 #intro {
-  margin-top: 60px;
+  margin-top: 0px;
   margin-bottom: 60px;
 }
 
 #megaline {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 400;
   line-height: 50px;
+}
+
+.center {
   text-align: center;
 }
 
+.left {
+  text-align: left;
+}
+
+
 #smallline {
   font-weight: 400;
-  text-align: center;
 }
 
 #subscribe {
   background-color: rgb(237, 239, 255);
   padding: 20px;
+  margin-top: 50px;
 }
 
 .sep {
@@ -100,7 +111,6 @@ a:hover {
 }
 
 .team {
-  height: 100px;
   margin-bottom: 30px;
 }
 
@@ -155,10 +165,37 @@ a:hover {
   font-size: 18px;
 }
 
-#features h4 {
+#schedule li {
+  list-style: none;
+}
+
+#schedule ul {
+  margin-left: 0;
+}
+
+#release-feature h4 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.features h4 {
   margin-top: 30px;
   font-size: 25px;
   font-weight: 100;
+}
+
+#expl h2 {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 100;
+}
+
+#expl {
+  margin-bottom: 40px;
 }
 
 .error {
