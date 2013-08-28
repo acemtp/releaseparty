@@ -9,3 +9,5 @@ preserve-inputs
 accounts-ui
 accounts-password
 accounts-ui-unstyled
+spiderable
+standard-app-packages

@@ -4,101 +4,96 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="Release Party, the Hackathon for builders, creators and doers">
   <meta name="author" content="Release Party">
 
-  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome-ie7.min.css" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
 
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
-  <link rel="apple-touch-icon-precomposed" href="">
-  <link rel="shortcut icon" href="">
+  <link rel="apple-touch-icon" sizes="144x144" href="rp_logo_144_color.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="rp_logo_114_color.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="rp_logo_72_color.png">
+  <link rel="apple-touch-icon" href="rp_logo_57_color.png">
+  <link rel="shortcut icon" href="rp_logo_64_color.png">
 
-  <meta property="og:image" content=""/>
+  <meta property="og:image" content="http://releaseparty.net/logo.png"/>
   <meta property="og:title" content="Release Party"/>
   <meta property="og:url" content="http://releaseparty.net"/>
   <meta property="og:site_name" content="Release Party"/>
   <meta property="og:type" content="website"/>
   <meta property="og:description" content="Release Party"/>
 
-  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  <meta name="google-site-verification" content="3KIEowkCPHqZDPEx5N93BfmXOchBRmUN0uFDs2bG1c4" />
+
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42020073-1', 'releaseparty.net');
+    ga('send', 'pageview');
+  </script>
 
 </head>
 
 <body>
-  <div id="wrap">
   <div class="container">
     <div id="header" class="row">
-      <div class="span4">
-        <!--<span id="logo"><a href="#">Release Party</a></span><br/><span id="tagline">from scratch to live in 40 hours</span>-->
+      <div class="col-md-6">
+        <p class="center"><img src="logo.png" /></p>
+        <p id="smallline" class="center">Held in Paris / France in November 2013</p>
       </div>
-      <div class="span8">
-        <ul id="menu">
-          <li class="firstli"><a href="#">Home</a></li>
-          <li class="firstli"><a href="#features">About</a></li>
-          <li class="firstli"><a href="#schedule">Schedule</a></li>
-          <li class="firstli"><a href="#team">Team</a></li>
-<!--          <li class="firstli"><a href="#faq">FAQ</a></li> -->
-        </ul>
-      </div>
-    </div>
-
-    <div id="intro" class="row">
-      <div class="span8">
-        <p id="logo"><a href="#">Release Party</a></p>
-        <p id="tagline">from scratch to live in 40 hours</p>
-        <p id="megaline"><b>Create, release & have fun!</b></p>
-        <p id="smallline">Held in <b>Paris</b>/France in <b>November 2013</b>.</p>
-      </div>
-      <div class="span4">
+      <div class="col-md-6">
+        <div class="pull-right">
+          <ul id="menu">
+            <li class="firstli"><a class="a" href="#">Home</a></li>
+            <li class="firstli"><a class="a" href="#expl" onclick="ga('send', 'event', 'menu', 'about');">About</a></li>
+            <li class="firstli"><a class="a" href="#schedule" onclick="ga('send', 'event', 'menu', 'schedule');">Schedule</a></li>
+            <li class="firstli"><a class="a" href="#team" onclick="ga('send', 'event', 'menu', 'team');">Team</a></li>
+            <li class="firstli"><a class="a" href="#faq" onclick="ga('send', 'event', 'menu', 'faq');">FAQ</a></li>
+            <li class="firstli"><a class="a" href="mailto:hi@releaseparty.net" target="_blank" onclick="ga('send', 'event', 'menu', 'contact');">Contact</a></li>
+          </ul>
+        </div>
         <div id="subscribe">
           {{> subscribe}}
         </div>
       </div>
     </div>
-  </div>
-  </div>
 
-  <div class="container">
     <div id="expl" class="row">
-      <div class="span10 offset1">
-        <h2>Release Party is about building and sharing cool stuff over the week-end. Whether you are an <b>expert or novice</b>, as long as you plan to <b>do & release</b> something during the week end, join us for a memorable experience.</h2>
+      <div class="col-md-10 col-md-offset-1">
+        <h2>Release Party is about building and sharing cool stuff over the week-end. Whether you are an <b>expert</b> or <b>novice</b>, as long as you plan to <b>create & release</b> something during the week end, join us for a memorable experience.</h2>
       </div>
     </div>
 
     <div class="row features">
-      <div class="span4">
+      <div class="col-md-4">
         <h4>By DOers for DOers</h4>
         <p><b>Artist, musician, hardware hacker, programmer...</b> as long as you want to DO something Release Party is the event for you.</p>
       </div>
-      <div class="span4">
-        <h4>Pure pleasure? Just for fun?</h4>
+      <div class="col-md-4">
+        <h4>Pure pleasure</h4>
         <p><b>No ranks, no judges, no slides, no final pitch.</b> You are here to create awesome things. </p>
       </div>
-      <div class="span4">
+      <div class="col-md-4">
         <h4>Collaboration & creativity</h4>
         <p><b>Meet new people & create a geniune team</b> to share and invent the weirdest, coolest, most creative things.</p>
       </div>
     </div>
-    <div id="release-feature" class="row">
-      <div class="span12">
-        <h4>Release</h4>
-      </div>
-    </div>
     <div class="row features">
-      <div class="span4">
+      <div class="col-md-4">
         <h4>Web, Mobile, Game, Hardware</h4>
         <p>Create a hardware-game, a music mobile instrument or a hardware-on-Internet-readyformobile... We love them all!</p>
       </div>
-      <div class="span4">
+      <div class="col-md-4">
         <h4>Last minute theme</h4>
         <p>All projects will have to follow a <b>secret theme</b>, which will be announced during the grand opening on Friday evening.</p>
       </div>
-      <div class="span4">
+      <div class="col-md-4">
         <h4>Achievements & Badges</h4>
         <p><b>Unlock achievements</b>, get the associated badges, we have achievements for anything you'll do!</p>
       </div>
@@ -107,30 +102,31 @@
     <hr class="sep" />
 
     <div id="schedule" class="row">
-      <div class="span12">
+      <div class="col-md-12">
         <h2 class="title">Schedule</h2>
         <div class="row">
-          <div class="span5">
+          <div class="col-md-5">
             <h4>Friday</h4>
             <ul>
               <li>4:00PM: Doors Open, start chatting, do games to meet people</li>
-              <li>5:00PM: Welcome Talk, Sponsors Talk (3mn), Rules</li>
-              <li>5:30PM: <b>Secret Theme Announcement</b> & Project Brainstorm</li>
+              <li>6:00PM: Welcome Talk, Sponsors Talk (3mn), Rules</li>
+              <li>6:30PM: <b>Theme Announcement</b> & Project Brainstorm</li>
               <li>7:00PM: Ideas Presentation</li>
-              <li>7:30PM: Team Matching & Start DOing</li>
+              <li>7:30PM: Lunch & Team Matching</li>
+              <li>8:30PM: Start DOing</li>
             </ul>
           </div>
-          <div class="span3">
+          <div class="col-md-3">
             <h4>Saturday</h4>
             <ul>
               <li>...Eat, Drink, Sleep (or not) & Surprises...</li>
             </ul>
           </div>
-          <div class="span4">
+          <div class="col-md-4">
             <h4>Sunday</h4>
             <ul>
-              <li>5PM: Release Deadline!</li>
-              <li>6PM: The Show & Party Time!</li>
+              <li>4:30PM: Release Deadline!</li>
+              <li>6:00PM: The Show & Party Time!</li>
             </ul>
           </div>
         </div>
@@ -140,89 +136,105 @@
     <hr class="sep" />
 
     <div id="team" class="row">
-      <div class="span12">
+      <div class="col-md-12">
         <h2 class="title">Team</h2>
         <div class="row">
-          <div class="span4 team">
+          <div class="col-md-4"><div class="team">
             <img src="team/acemtp.jpg" class="img-circle pull-left" alt="">
-            <p class="team-name">Vianney 'acemtp' Lecroart</p>
+            <p class="team-name"><a href="http://fr.linkedin.com/in/acemtp/" class="color" target="_blank" onclick="ga('send', 'event', 'team', 'link', 'acemtp');">Vianney 'acemtp' Lecroart</a></p>
             <p class="team-desc">dok.io tech founder - Organized AngelHackParis - Demoscene coder - Organized coding party</p>
-          </div>
-          <div class="span4 team">
-            <img src="team/made.jpg" class="img-circle pull-left" alt="">
-            <p class="team-name">Carlos 'Made' Pardo</p>
-            <p class="team-desc">Artist - Café Salé cofounder - Demoscene well known graphist</p>
-          </div>
-          <div class="span4 team">
-            <img src="team/nico.jpg" class="img-circle pull-left" alt="">
-            <p class="team-name">Nicolas Hognon</p>
-            <p class="team-desc">C++ Dev - ePawn lead software engineer - Demoscene fan</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="span4 team">
-            <img src="team/madflo.jpg" class="img-circle pull-left" alt="">
-            <p class="team-name">Florian 'madflo' Le Goff</p>
-            <p class="team-desc">Takeoff Conference organizer - MailJet Evangelist - 9h37 tech cofounder - Organized Prologin</p>
-          </div>
-          <div class="span4 team">
-            <img src="team/skeet.jpg" class="img-circle pull-left" alt="">
-            <p class="team-name">Alban 'Skeet' Lecocq</p>
-            <p class="team-desc">10+ years video game coder - Demoscene coder</p>
-          </div>
-          <div class="span4 team">
+          </div></div>
+          <div class="col-md-4"><div class="team">
             <img src="team/ben.jpg" class="img-circle pull-left" alt="">
-            <p class="team-name">Benjamin-Samuel Ewenczyk</p>
+            <p class="team-name"><a href="http://fr.linkedin.com/pub/benjamin-samuel-ewenczyk/2/ab8/ab2" class="color" target="_blank" onclick="ga('send', 'event', 'team', 'link', 'ben');">Benjamin-Samuel Ewenczyk</a></p>
             <p class="team-desc">Product manager evangelist - Lean startup machine mentor - digiBiDi tech founder</p>
-          </div>
+          </div></div>
+          <div class="col-md-4"><div class="team">
+            <img src="team/nico.jpg" class="img-circle pull-left" alt="">
+            <p class="team-name"><a href="http://fr.linkedin.com/in/nicolashognon" class="color" target="_blank" onclick="ga('send', 'event', 'team', 'link', 'nico');">Nicolas Hognon</a></p>
+            <p class="team-desc">10y+ C++ Dev - ePawn lead software engineer - Demoscene fan</p>
+          </div></div>
         </div>
         <div class="row">
-          <div class="span4 team">
+          <div class="col-md-4"><div class="team">
+            <img src="team/madflo.jpg" class="img-circle pull-left" alt="">
+            <p class="team-name"><a href="http://fr.linkedin.com/in/flegoff" class="color" target="_blank" onclick="ga('send', 'event', 'team', 'link', 'madflo');">Florian 'madflo' Le Goff</a></p>
+            <p class="team-desc">Takeoff Conference organizer - MailJet Evangelist - 9h37 tech cofounder - Organized Prologin</p>
+          </div></div>
+          <div class="col-md-4"><div class="team">
+            <img src="team/made.jpg" class="img-circle pull-left" alt="">
+            <p class="team-name"><a href="http://www.m4de.com" class="color" target="_blank" onclick="ga('send', 'event', 'team', 'link', 'made');">Carlos 'Made' Pardo</a></p>
+            <p class="team-desc">Artist - Café Salé cofounder - Demoscene well known graphist</p>
+          </div></div>
+          <div class="col-md-4"><div class="team">
             <img src="team/case.jpg" class="img-circle pull-left" alt="">
-            <p class="team-name">Marc 'Case' Planard</p>
-            <p class="team-desc">4 years video game lead developer - Global Game Jam fan</p>
-          </div>
-          <div class="span4 team">
+            <p class="team-name"><a href="http://fr.linkedin.com/pub/marc-planard/22/66/182" class="color" target="_blank" onclick="ga('send', 'event', 'team', 'link', 'case');">Marc 'Case' Planard</a></p>
+            <p class="team-desc">4 years video game lead developer - Global Game Jam fan - Guitarist</p>
+          </div></div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"><div class="team">
+            <img src="team/skeet.jpg" class="img-circle pull-left" alt="">
+            <p class="team-name"><a href="http://fr.linkedin.com/pub/alban-lecocq/0/233/160" class="color" target="_blank" onclick="ga('send', 'event', 'team', 'link', 'skeet');">Alban 'Skeet' Lecocq</a></p>
+            <p class="team-desc">10+ years video game coder - Demoscene coder</p>
+          </div></div>
+          <div class="col-md-4"><div class="team">
             <img src="team/francois.jpg" class="img-circle pull-left" alt="">
             <p class="team-name">François Lecroart</p>
             <p class="team-desc">9 years web coder - JS fan</p>
-          </div>
+          </div></div>
         </div>
       </div>
     </div>
-<!--
+
     <hr class="sep" />
 
     <div id="faq" class="row">
-      <div class="span12">
+      <div class="col-md-12">
         <h2 class="title">FAQ</h2>
-
-        <h4>Why another damn hackathon?</h4>
-        <p>Yes, there are hackathon every week end. Vianney organized the Paris version of AngelHack, the biggest hackathon. He also won some hackathons like the BeMyApp (http://cleverdoor.co). In the previous century, Vianney was taking part of the DemoScene that regularly organize CodingParties. A Hackathon and a CodingParty is almost the same thing, pack some motivated people in the same room for a week end. But the 2 doesn't share the same philosophy. Today most hackathon are place to win money, start a startup and often, the winner is the one who has the best pitch. In contrast, during coding party, you only show what you do, the project speaks for you and more important, you go to a coding party to meet amazing people and have a memorable experience, not only to win.</p>
-        <p>The Release Party takes the best of the Hackathon, the Coding Parties but also other similar events like GlobalGameJam (see it like hackathon for game) to do a unique event.</p>
 
         <h4>Why should I come?</h4>
         <ul>
-          <li>to have an memorable experience</li>
+          <li>to have a memorable experience</li>
           <li>to show to your peers what amazing things you can do in only a week end</li>
           <li>to meet and talk with awesome people</li>
-          <li>to leave your comfort zone and learn lot of new things</li>
+          <li>to break out of your comfort zone and learn new things</li>
+          <li>to release something!</li>
         </ul>
 
-        <h4>Why it's not free?</h4>
-        <p>Tickets fee is really small. It doesn't even cover the food expenses. We just want people who join the Release Party be commited and really want to be part of the experience.</p>
-
-        <h4>Where & when?</h4>
-        <p>It'll take place in Paris in November. More info soon.</p>
-
-        <h4>How to get a ticket?</h4>
-        <p>For the moment, tickets are not for sell. Subscribe on the homepage to be contacted when they are available.</p>
+        <h4>Where ? When? And how do I get a ticket?</h4>
+        <p>It'll take place in Paris in November. Tickets are not for sale at the moment.</p>
+        <p><a href="#" class="a">Register</a> and you'll be the first to get notified!</p>
 
         <h4>Will there be prizes?</h4>
-        <p>Sponsors will be able to attach some prizes to achievements. Depending of which achievement you plan to get, you'll decide which prize you can win.</p>
+        <p>Our sponsors will gift prizes for selected completed achievements. We don't recommend choosing you achievements based solely on the prizes though ;)</p>
+
+        <h4>How do achievements & badges work?</h4>
+        <p>Since the Release Party is about DOing stuff, you'll get credit for it! We have listed a lot of achievements that can be done during the week-end: Opensourcer, Releaser, Hardware, Game, Web, Sponsor, Mentor, FastCompo... (full list will be available on D-day).</p>
+        <p>Each achievement will be rewarded with a badge. Choose the achievements you want to do, and get the badges!</p>
+
+        <h4>I'm a game designer or product manager, can I join?</h4>
+        <p>The event focus on creating a project, if you can do something like programming, designing, drawing (even if you are a novice) just subscribe under this category.</p>
+        <p>Your talent for game design or product management will be a plus for your team.</p>
+        <p>NB: if you don't have DOer skill but still think that you can contribute to the Release Party, send a mail to hi@releaseparty.net explaining us why you want to come and how you can help a team. Show us you are a DOer!</p>
+
+        <h4>I'm not a bizdev, can I win?</h4>
+        <p>First of all, it's not a contest: every participant will be a winner!</p>
+        <p>So don't expect to launch a startup or go to SF. You don't have a business model? That's the point!</p>
+
+        <h4>What are the Fast contest?</h4>
+        <p>Because it's too easy to release a project in 40 hours, we'll challenge you with fast contests during the week end (1 hour long). Accept them and show us that nothing can scare you. Fast contest will be of course rewarded with badges.</p>
+
+        <h4>Teams & project brainstorming</h4>
+        <p>One we announce the theme, you'll have 30mn to think of a cool project to work on during the Release Party (you can brainstorm alone or in teams, as you wish). All the people who have ideas will the have 15 to 30 seconds to present them to everybody. No need to prepare some slides, just explain what you want to do, if you are looking for people (and which skills)...</p>
+        <p>You'll then get one hour either join or create a team. And after that, the DOing will begin!</p>
+
+        <h4>Any questions?</h4>
+        <p>You have a question that is not in this FAQ? <a class="a" href="mailto:hi@releaseparty.net" target="_blank" onclick="ga('send', 'event', 'faq', 'contact');">Drop us an email</a> and it'll be a pleasure to answer you.</p>
+
       </div>
     </div>
--->
+
   </div> <!-- /container -->
 </body>
 
@@ -233,8 +245,16 @@
     <p>We are happy to know you are interested by this project. We'll contact you as soon as we have more information!</p>
   {{else}}
     <p>Be informed when tickets are available:</p>
-    <input id="email" type="email" class="input-medium" placeholder="email..." /><br/>
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="input-group">
+          <input id="email" type="email" class="form-control" placeholder="email..." /><br/>
+          <span class="input-group-btn">
+            <button id="btn" class="btn btn-default" type="button">Subscribe!</button>
+          </span>
+        </div>
+      </div>
+    </div>
     {{#if error}}<p class="error">{{error}}</p>{{/if}}
-    <input id="btn" class="btn" type="button" value="Subscribe" />
   {{/if}}
 </template>

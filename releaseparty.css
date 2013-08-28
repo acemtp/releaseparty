@@ -13,55 +13,36 @@ body {
 .title {
   margin-bottom: 50px;
   font-weight: 300;
+  color: #91AF03;
 }
 
-a {
-  color: rgb(147, 154, 206);
+b {
+  color: #91AF03;
 }
 
-a:hover {
-  color: rgb(107, 121, 214);
+.a {
+  color: #91AF03;
+  font-weight: bold;
+}
+
+.a:hover {
+  color: black;
   text-decoration: none;
 }
 
-#wrap {
-  background-color: rgb(216, 219, 255);
-}
 
-#logo {
-  white-space:nowrap;
-	font-size: 50px;
-	font-weight: 600;
-	letter-spacing: -7px;
-  line-height: 1;
+#header {
   margin-bottom: 0;
 }
 
-#logo a {
-  color: rgb(56, 64, 122);
-}
-
-#logo a:hover {
-  color: rgb(107, 121, 214);
-  text-decoration: none;
-}
-
-
-#tagline {
-	font-size: 15px;
-  position: relative;
-  top: -9px;
-}
-
-#header {
-  margin-bottom: 0px;
+#header img {
+  width: 300px;
 }
 
 #menu {
+  text-transform: uppercase;
   margin-top: 20px;
   margin-right: 40px;
-  display: inline-block;
-  float: right;
   list-style: none;
 }
 
@@ -69,20 +50,15 @@ a:hover {
   float: left;
   margin-left: 20px;
 }
+
 #menu a:hover {
-  color: grey;
+  color: black;
   text-decoration: none;
 }
 
 #intro {
-  margin-top: 0px;
+  margin-top: 50px;
   margin-bottom: 60px;
-}
-
-#megaline {
-  font-size: 50px;
-  font-weight: 400;
-  line-height: 50px;
 }
 
 .center {
@@ -99,9 +75,9 @@ a:hover {
 }
 
 #subscribe {
-  background-color: rgb(237, 239, 255);
+  background-color: #AFE50B;
   padding: 20px;
-  margin-top: 50px;
+  margin-top: 130px;
 }
 
 .sep {
@@ -112,6 +88,7 @@ a:hover {
 
 .team {
   margin-bottom: 30px;
+  min-height: 100px;
 }
 
 .team img {
@@ -119,7 +96,15 @@ a:hover {
   margin-right: 10px;
 }
 
+.color {
+  color: #91AF03;
+}
+.color:hover {
+  color: black;
+}
+
 .team-name {
+  color: #91AF03;
   font-size: 17px;
   font-weight: 600;
 }
@@ -129,48 +114,14 @@ a:hover {
   font-weight: 400;
 }
 
-#featurette hr {
-  margin: 80px;
-  border: solid #dddddd;
-  border-width: 1px 0 0;
-}
-
-/* Featurettes
-------------------------- */
-
-.featurette {
-  padding-top: 0px; /* Vertically center images part 1: add padding above and below text. */
-  overflow: hidden; /* Vertically center images part 2: clear their floats. */
-}
-.featurette-image {
-  margin-top: 0px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-}
-
-/* Give some space on the sides of the floated elements so text doesn't run right into it. */
-.featurette-image.pull-left {
-  margin-right: 40px;
-}
-.featurette-image.pull-right {
-  margin-left: 40px;
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  line-height: 1;
-  letter-spacing: -1px;
-  margin: 0 0 10px 0;
-}
-
-.featurette-text {
-  font-size: 18px;
-}
-
 #schedule li {
   list-style: none;
+  margin-top: 10px;
 }
 
 #schedule ul {
   margin-left: 0;
+  padding-left: 0;
 }
 
 #release-feature h4 {
@@ -185,6 +136,7 @@ a:hover {
   margin-top: 30px;
   font-size: 25px;
   font-weight: 100;
+  color: #91AF03;
 }
 
 #expl h2 {
@@ -206,9 +158,15 @@ a:hover {
   text-align: center;
 }
 
-#faq h4, #schedule h4 {
+#schedule h4 {
+  color: #91AF03;
   font-size: 20px;
-  margin-top: 40px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
+#faq h4 {
+  color: #91AF03;
+  font-size: 20px;
+  margin-top: 50px;
+  font-weight: 400;
+}
