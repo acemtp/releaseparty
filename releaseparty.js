@@ -31,7 +31,18 @@ if (Meteor.isClient) {
 
 }
 
+count = function() {
+  Meteor.call('count', function(e,r) {
+    console.log('usercount: ', r);
+  });
+}
+
 Meteor.methods({
+  count: function() {
+    if (!this.isSimulation) {
+      return Subscribers.find().count();
+    }
+  },
   subscribe: function(email) {
     if (email == '') {
       return 'Please enter your email';
